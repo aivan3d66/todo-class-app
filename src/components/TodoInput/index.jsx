@@ -16,8 +16,8 @@ class TodoInput extends Component {
     })
   }
 
-  handleSubmit(event) {
-    event.preventDefault()
+  handleSubmit(e) {
+    e.preventDefault()
     if (this.state.inputText.trim() !== '') {
       this.props.addTodo(this.state.inputText.trim())
       this.setState((state, props) => ({
@@ -42,4 +42,4 @@ class TodoInput extends Component {
 
 }
 
-export default TodoInput
+export default React.memo(TodoInput)
