@@ -1,17 +1,18 @@
 import styled from 'styled-components'
+import theme from '../../theme'
 
 export const ButtonWrapper = styled.button`
-  width: 140px;
-  padding: 10px;
-  color: white;
-  background-color: rgba(100, 149, 237, 100);
-  border: 1px solid rgba(100, 149, 237, 100);
+  width: ${theme.size.btn}px;
+  padding: ${theme.paddings.p2}rem;
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.lightBlue};
+  border: ${theme.spaces[1]}px solid ${theme.colors.lightBlue};
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    color: #ffffff;
-    background-color: rgba(100, 149, 237, 0.5);
-    border: 1px solid rgba(100, 149, 237, 0.5);
+    color: ${theme.colors.white};
+    background-color: ${theme.colors.blue};
+    border: ${theme.spaces[1]}px solid ${theme.colors.blue};
   }
 `

@@ -1,27 +1,24 @@
 import styled from 'styled-components'
+import theme from '../../theme'
 
 export const TodoItemWrapper = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 10px;
-  border-bottom: 1px solid #bababa;
+  width: ${theme.size.max}%;
+  padding: ${theme.paddings.p2}rem;
+  border-bottom: ${theme.spaces[1]}px solid ${theme.colors.lightGray};
 `
 
 export const TodoItemCheckbox = styled.input`
-  width: 20px;
-  height: 20px;
-  margin: 0 20px 0 0;
-`
-
-export const TodoItemText = styled.p`
-  flex-grow: 1;
+  width: ${theme.size.todo}px;
+  height: ${theme.size.todo}px;
+  margin: 0 ${theme.margins.m5}rem 0 0;
 `
 
 export const TodoItemButton = styled.button`
-  width: 20px;
-  height: 20px;
+  width: ${theme.size.todo}px;
+  height: ${theme.size.todo}px;
   border: none;
   background-color: transparent;
   cursor: pointer;

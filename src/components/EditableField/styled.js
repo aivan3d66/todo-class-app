@@ -1,15 +1,16 @@
 import styled from 'styled-components'
+import theme from '../../theme'
 
 export const EditableSpanWrapper = styled.div`
-  width: 100%;
+  width: ${theme.size.max}%;
 `
 
 export const EditableInput = styled.input`
-  width: 100%;
+  width: ${theme.size.max}%;
   text-align: left;
 `
 
 export const EditableSpan = styled.div`
-  width: 100%;
+  width: ${theme.size.max}%;
   text-align: left;
 `

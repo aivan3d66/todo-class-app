@@ -1,30 +1,31 @@
 import styled from 'styled-components'
+import theme from '../../theme'
 
 export const TodoListWrapper = styled.ul`
-  height: 200px;
+  height: ${theme.height.h32}rem;
   list-style: none;
   overflow: auto;
-  scrollbar-color: #b2b2b2;
+  scrollbar-color: ${theme.colors.extraLightGray};
   scrollbar-width: thin;
   text-align: left;
   box-sizing: border-box;
 
   &::-webkit-scrollbar {
-    background: #bbbbbb;
-    border-radius: 10px;
+    background: ${theme.colors.secondaryLight};
+    border-radius: ${theme.spaces[10]}px;
   }
 
   &::-webkit-scrollbar-thumb {
     background-clip: content-box;
     background-color: rgba(100, 149, 237, 100);
-    border-radius: 10px;
+    border-radius: ${theme.spaces[10]}px;
   }
 `
 
 export const TodoListEmpty = styled.li`
-  margin: 80px 0;
-  color: #bababa;
-  font-size: 20px;
+  margin: ${theme.margins.m20}rem 0;
+  color: ${theme.colors.secondaryLight};
+  font-size: ${theme.textStyle.base.fontSize}rem;
   text-transform: uppercase;
   text-align: center;
 `
