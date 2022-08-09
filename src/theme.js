@@ -28,36 +28,15 @@ const size = {
   todo: 20,
 }
 
-const theme = {
-  boxShadows,
-  font,
-  size,
-  colors: {
-    lightBlue,
-    blue,
-    secondaryLight,
-    lightOrange,
-    extraLightBlue,
-    black,
-    white,
-    error,
-    darkGray,
-  },
-}
-
 export default {
   size,
   boxShadows,
   font,
-  opacity: {
-    opacity0: 0,
-    opacity50: 0.5,
-    opacity100: 1,
-  },
   height: {
     full: 100,
     h28: 7,  // 112px
     h32: 8,  // 130px
+    h38: 12,  // 200px
     h96: 32, // 500px
   },
   radius: {
@@ -98,10 +77,6 @@ export default {
     128,
   ],
   textStyle: {
-    sm: {
-      fontSize: 0.75,
-      lineHeight: 1,
-    },
     base: {
       fontSize: 1.25,
       lineHeight: 1.75,

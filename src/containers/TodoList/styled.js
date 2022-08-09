@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '../../theme'
 
 export const TodoListWrapper = styled.ul`
-  height: ${theme.height.h32}rem;
+  height: ${theme.height.h38}rem;
   list-style: none;
   overflow: auto;
   scrollbar-color: ${theme.colors.extraLightGray};
@@ -17,7 +17,7 @@ export const TodoListWrapper = styled.ul`
 
   &::-webkit-scrollbar-thumb {
     background-clip: content-box;
-    background-color: rgba(100, 149, 237, 100);
+    background-color: ${theme.colors.lightBlue};
     border-radius: ${theme.spaces[10]}px;
   }
 `
