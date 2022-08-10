@@ -1,4 +1,3 @@
-import { v1 } from 'uuid'
 import { ADD_TODO, COMPLETE_TODO, DELETE_TODO, FILTER_TODO, UPDATE_TODO } from '../constants/actions'
 
 const initialState = {
@@ -16,7 +15,7 @@ export const appReducer = (state = initialState, { type, payload }) => {
           {
             text: payload.text,
             completed: false,
-            id: v1(),
+            id: payload.id,
           },
         ],
       }

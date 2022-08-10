@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { TodoForm, TodoFormButton, TodoFormInput } from './styled'
 
+import { v1 } from 'uuid'
+
 class TodoInput extends Component {
 
   constructor(props, context) {
@@ -17,9 +19,11 @@ class TodoInput extends Component {
   }
 
   handleSubmit(e) {
+    const todoId = v1()
+
     e.preventDefault()
     if (this.state.inputText.trim() !== '') {
-      this.props.addTodo(this.state.inputText.trim())
+      this.props.addTodo(this.state.inputText.trim(), todoId)
       this.setState((state, props) => ({
         inputText: state.inputText = ''
       }))
